@@ -20,11 +20,16 @@ body {
 }
 .container {
   width: 1300px;
-  max-width: 93%;
+  max-width: 95%;
   margin: 0 auto;
 }
 .rubik-font {
   font-family: "Rubik", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
+}
+
+.vertical-text {
+  writing-mode: vertical-lr;
+  text-orientation: mixed;
 }

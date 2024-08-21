@@ -6,6 +6,14 @@ import fBanner from "@/assets/feature1P.png";
 import fBanner2 from "@/assets/feature2P.png";
 import fShoe from "@/assets/fS1.png";
 import fShoe2 from "@/assets/fS2.png";
+import pImg from "@/assets/product1.png";
+import pImg2 from "@/assets/product12.png";
+import pImg3 from "@/assets/product13.png";
+import pImg4 from "@/assets/product14.png";
+import pImg5 from "@/assets/product15.png";
+import pImg6 from "@/assets/product16.png";
+import pImg7 from "@/assets/product17.png";
+import pImg8 from "@/assets/product18.png";
 
 export const bannerShoeData = [
   {
@@ -51,5 +59,66 @@ export const featureData = [
     featureImg: fShoe2,
     featureText: "Running Shoes",
     featureDesc: " Nike Just Do it",
+  },
+];
+
+export const productData = [
+  {
+    id: 11,
+    img: pImg,
+    category: "lifestyle",
+    title: "Air Jordan ",
+    price: "160",
+  },
+  {
+    id: 112,
+    img: pImg2,
+    category: "lifestyle",
+    title: "Air Jordan ",
+    price: "160",
+  },
+  {
+    id: 113,
+    img: pImg3,
+    category: "lifestyle",
+    title: "Air Jordan ",
+    price: "160",
+    newItem: true,
+  },
+  {
+    id: 114,
+    img: pImg4,
+    category: "lifestyle",
+    title: "Air Jordan ",
+    price: "160",
+  },
+  {
+    id: 115,
+    img: pImg5,
+    category: "lifestyle",
+    title: "Air Jordan ",
+    price: "160",
+    newItem: true,
+  },
+  {
+    id: 116,
+    img: pImg6,
+    category: "lifestyle",
+    title: "Air Jordan ",
+    price: "160",
+  },
+  {
+    id: 117,
+    img: pImg7,
+    category: "lifestyle",
+    title: "Air Jordan ",
+    price: "160",
+  },
+  {
+    id: 118,
+    img: pImg2,
+    category: "lifestyle",
+    title: "Air Jordan ",
+    price: "160",
   },
 ];
