@@ -14,6 +14,9 @@ import pImg5 from "@/assets/product15.png";
 import pImg6 from "@/assets/product16.png";
 import pImg7 from "@/assets/product17.png";
 import pImg8 from "@/assets/product18.png";
+import { GoMail } from "react-icons/go";
+import { BsTelephone } from "react-icons/bs";
+import { IoHomeOutline } from "react-icons/io5";
 
 export const bannerShoeData = [
   {
@@ -120,5 +123,47 @@ export const productData = [
     category: "lifestyle",
     title: "Air Jordan ",
     price: "160",
+  },
+];
+
+export const footer = [
+  {
+    id: 11,
+    title: "contact",
+    children: [
+      { text: "Email: mousumitu@gmail.com", iconImg: <GoMail /> },
+      { text: "Phone: +880168xxxxxx", iconImg: <BsTelephone /> },
+      { text: "Locations: Dhaka, Bangladesh", iconImg: <IoHomeOutline /> },
+    ],
+  },
+  {
+    id: 12,
+    title: "my account",
+    children: [
+      { text: "My Account" },
+      { text: "My Cart" },
+      { text: "Wishlist" },
+      { text: "Login" },
+    ],
+  },
+  {
+    id: 13,
+    title: "information",
+    children: [
+      { text: "About Us" },
+      { text: "Careers" },
+      { text: "Privacy Policy" },
+      { text: "Terms & Conditions" },
+    ],
+  },
+  {
+    id: 14,
+    title: "custom service",
+    children: [
+      { text: "Help Center" },
+      { text: "Returns" },
+      { text: "Shipping Info" },
+      { text: "Contact Us" },
+    ],
   },
 ];

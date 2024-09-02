@@ -33,3 +33,19 @@ body {
   writing-mode: vertical-lr;
   text-orientation: mixed;
 }
+
+::-webkit-scrollbar {
+  width: 10px;
+  background: rgb(251, 251, 251);
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #111111;
+  border-radius: 10px;
+}

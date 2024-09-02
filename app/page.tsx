@@ -1,7 +1,9 @@
 import Arrival from "@/components/feature/Arrival";
+import Category from "@/components/feature/Category";
 import FeatureArea from "@/components/feature/FeatureArea";
+import WeeklyDeal from "@/components/feature/WeeklyDeal";
 import HeroSection from "@/components/heroSection/HeroSection";
-import Image from "next/image";
+import Newsletter from "@/components/newsletter/Newsletter";
 
 export default function Home() {
   return (
@@ -9,6 +11,9 @@ export default function Home() {
       <HeroSection />
       <FeatureArea />
       <Arrival />
+      <WeeklyDeal />
+      <Category />
+      <Newsletter />
     </main>
   );
 }

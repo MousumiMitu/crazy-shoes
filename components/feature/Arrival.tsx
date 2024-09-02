@@ -5,7 +5,7 @@ import { productData } from "@/constant/data";
 const Arrival = () => {
   return (
     <div className="py-20 space-y-4 container">
-      <h3 className="text-center text-[3.5rem] font-bold"> New Arrival</h3>
+      <h3 className="text-center text-[3.5rem] font-semibold"> New Arrival</h3>
       <div className="grid grid-cols-4 gap-7">
         {productData.map((card: any) => (
           <div key={card.id}>

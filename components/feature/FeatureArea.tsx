@@ -3,6 +3,7 @@ import React from "react";
 import cover from "@/assets/feature1P.png";
 import img1 from "@/assets/fS1.png";
 import { featureData } from "@/constant/data";
+import AppButton from "../button/AppButton";
 
 interface FeatureProps {
   banner: any;
@@ -87,7 +88,9 @@ const FeatureContent: React.FC<FeatureProps> = ({
           </h2>
           <p className="text-2xl ">{bannerDesc}</p>
 
-          <button></button>
+          <div className="pt-2">
+            <AppButton>More Info</AppButton>
+          </div>
         </div>
       </div>
     </div>
