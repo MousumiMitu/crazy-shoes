@@ -1,48 +1,44 @@
-import shoeImg from "@/assets/shoe2.png";
-import shoeImg2 from "@/assets/shoe1.png";
-import shoeImg3 from "@/assets/shoe3.png";
-import bgCover from "@/assets/banner-min.png";
-import fBanner from "@/assets/feature1P.png";
-import fBanner2 from "@/assets/feature2P.png";
-import fShoe from "@/assets/fS1.png";
-import fShoe2 from "@/assets/fS2.png";
-import pImg from "@/assets/product1.png";
-import pImg2 from "@/assets/product12.png";
-import pImg3 from "@/assets/product13.png";
-import pImg4 from "@/assets/product14.png";
-import pImg5 from "@/assets/product15.png";
-import pImg6 from "@/assets/product16.png";
-import pImg7 from "@/assets/product17.png";
-import pImg8 from "@/assets/product18.png";
+import shoeImg from "@/public/assets/shoe2-min.png";
+import shoeImg2 from "@/public/assets/shoe1-min.png";
+import shoeImg3 from "@/public/assets/shoe3-min.png";
+import fBanner from "@/public/assets/feature1P.png";
+import fBanner2 from "@/public/assets/feature2P.png";
+import fShoe from "@/public/assets/fS1.png";
+import fShoe2 from "@/public/assets/fS2.png";
+import pImg from "@/public/assets/product1.png";
+import pImg2 from "@/public/assets/product12.png";
+import pImg3 from "@/public/assets/product13.png";
+import pImg4 from "@/public/assets/product14.png";
+import pImg5 from "@/public/assets/product15.png";
+import pImg6 from "@/public/assets/product16.png";
+import pImg7 from "@/public/assets/product17.png";
+
 import { GoMail } from "react-icons/go";
 import { BsTelephone } from "react-icons/bs";
 import { IoHomeOutline } from "react-icons/io5";
 
-export const bannerShoeData = [
+export const BannerShoeData = [
   {
     id: 11,
     image: shoeImg,
     title: "Men's Original",
     subTile: "New Sneaker in Town",
-    bgCover: bgCover,
   },
   {
     id: 12,
     image: shoeImg2,
     title: "Women's Original",
     subTile: "Winter Fashion",
-    bgCover: bgCover,
   },
   {
     id: 13,
     image: shoeImg3,
     title: "2024 January",
     subTile: "New Spring Collection",
-    bgCover: bgCover,
   },
 ];
 
-export const featureData = [
+export const FeatureData = [
   {
     id: 1,
     banner: fBanner,
@@ -65,7 +61,7 @@ export const featureData = [
   },
 ];
 
-export const productData = [
+export const ProductData = [
   {
     id: 11,
     img: pImg,
@@ -126,14 +122,14 @@ export const productData = [
   },
 ];
 
-export const footer = [
+export const FooterData = [
   {
     id: 11,
     title: "contact",
     children: [
-      { text: "Email: mousumitu@gmail.com", iconImg: <GoMail /> },
-      { text: "Phone: +880168xxxxxx", iconImg: <BsTelephone /> },
-      { text: "Locations: Dhaka, Bangladesh", iconImg: <IoHomeOutline /> },
+      { text: "Email: mousumitu@gmail.com" },
+      { text: "Phone: +880168xxxxxx" },
+      { text: "Locations: Dhaka, Bangladesh" },
     ],
   },
   {

@@ -1,4 +1,4 @@
-import { footer } from "@/constant/data";
+import { FooterData } from "@/constant/data";
 import React from "react";
 import { FaFacebookF } from "react-icons/fa";
 import { BsTwitterX } from "react-icons/bs";
@@ -9,9 +9,9 @@ import { FaPinterestP } from "react-icons/fa";
 const Footer = () => {
   return (
     <footer className="bg-darkColor    w-full  text-white">
-      <div className="h-[60vh] py-3 flex items-center p-[2%]">
+      <div className="lg:h-[60vh] py-3 flex items-center p-[2%]">
         <div className="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-7 w-full ">
-          {footer.map((data) => (
+          {FooterData.map((data) => (
             <div key={data.id} className="space-y-5 ">
               <h5 className="text-2xl capitalize font-semibold">
                 {data.title}
@@ -22,7 +22,7 @@ const Footer = () => {
                     key={index}
                     className="text-[1.1rem] capitalize flex items-center gap-3 text-gray-400 hover:text-activeColor hover:font-medium"
                   >
-                    {child.iconImg && <span>{child.iconImg}</span>}
+                    {/* {child.iconImg && <span>{child.iconImg}</span>} */}
                     {child.text || child}
                   </li>
                 ))}

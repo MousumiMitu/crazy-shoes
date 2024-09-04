@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
-import banner from "@/assets/cat1.png";
-import banner2 from "@/assets/cat2.png";
+import banner from "@/public/assets/cat1.png";
+import banner2 from "@/public/assets/cat2.png";
 import AppButton from "../button/AppButton";
 
 const Category = () => {

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import feature from "@/assets/featureB.png";
+import feature from "@/public/assets/featureB.png";
 import AppButton from "../button/AppButton";
 
 const WeeklyDeal = () => {

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import cover from "@/assets/news.jpg";
+import cover from "@/public/assets/news.jpg";
 import { GoMail } from "react-icons/go";
 
 const Newsletter = () => {
@@ -8,17 +8,17 @@ const Newsletter = () => {
     <section className="h-[500px] relative w-full">
       <Image
         src={cover}
-        layout="fill"
+        fill
         className="object-center object-cover pointer-events-none w-full h-full opacity-25 "
         alt="cover "
       />
 
-      <div className="relative h-full flex items-center justify-center container ">
+      <div className="absolute w-full h-full left-0 top-0 flex items-center justify-center container ">
         <div className="space-y-1 text-center w-full">
           <h6 className="text-[3.5rem] font-semibold ">Newsletter</h6>
           <p className="text-lg ">
             Enter your email address for our mailing list to keep your self
-            update.
+            update.asa
           </p>
           <div className="w-[65%]  mx-auto  relative ">
             <input

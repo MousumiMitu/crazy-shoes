@@ -19,7 +19,7 @@ const ProductCard: React.FC<ProductProps> = ({
 }) => {
   return (
     <div className=" pb-4 group   transition-all delay-150 ease-in-out duration-300">
-      <div className="bg-[#F1F2F4] h-[300px] flex items-center justify-center relative group">
+      <div className="bg-[#F1F2F4] lg:h-[300px] md:h-[250px] h-[210px] flex items-center justify-center relative group">
         <Image src={img} alt="img" className="w-[75%]" />
         {newItem && (
           <div className="z-10 absolute right-0 top-0 m-2 bg-activeColor ">

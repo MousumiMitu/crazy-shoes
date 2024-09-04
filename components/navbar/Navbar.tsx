@@ -7,21 +7,21 @@ import { IoIosSearch } from "react-icons/io";
 
 const Navbar = () => {
   return (
-    <nav className="h-[90px] container flex justify-between items-center z-[100] text-white relative uppercase">
+    <nav className="lg:h-[90px] md:h-[75px] h-[60px] bg-white lg:bg-transparent px-3 lg:container flex justify-between items-center z-[100] lg:text-white text-darkColor relative uppercase">
       <div className=" flex items-center gap-2">
         <RiMenu2Line className="text-xl" />
-        <span>Menu</span>
+        <span className="hidden lg:block">Menu</span>
       </div>
-      <div className=" uppercase">
+      <div className="text-center uppercase">
         <span className="text-xl font-medium">Knee-Hi</span>
       </div>
       <div className="text-xl flex items-center">
-        <div className="border-e ">
-          <IoIosSearch className="text-2xl me-4" />
+        <div className="lg:border-e ">
+          <IoIosSearch className="text-2xl lg:me-4 me-2" />
         </div>
 
-        <div className=" flex items-center gap-4">
-          <FaRegUser className="ms-4" />
+        <div className=" flex items-center lg:gap-4 md:gap-3 gap-3">
+          <FaRegUser className="ms-4 hidden lg:block" />
           <BsCart3 />
         </div>
       </div>
