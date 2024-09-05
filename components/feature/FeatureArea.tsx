@@ -53,7 +53,7 @@ const FeatureContent: React.FC<FeatureProps> = ({
         <Image
           src={featureImg}
           alt="img1"
-          className=" lg:h-[180px] md:h-[120px] sm:h-[90px] w-auto px-2"
+          className=" lg:h-[180px] md:h-[120px] sm:h-[90px] h-[130px] w-auto px-2"
         />
         <div className="space-y-1 text-center ">
           <span className="lg:text-xl md:text-lg sm:text-base text-lg block ">

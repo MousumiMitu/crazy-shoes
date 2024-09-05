@@ -19,7 +19,7 @@ const ProductCard: React.FC<ProductProps> = ({
 }) => {
   return (
     <div className=" pb-4 group   transition-all delay-150 ease-in-out duration-300">
-      <div className="bg-[#F1F2F4] lg:h-[300px] md:h-[250px] h-[210px] flex items-center justify-center relative group">
+      <div className="bg-[#F1F2F4] lg:h-[300px] md:h-[250px] h-[200px] flex items-center justify-center relative group">
         <Image src={img} alt="img" className="w-[75%]" />
         {newItem && (
           <div className="z-10 absolute right-0 top-0 m-2 bg-activeColor ">
@@ -39,9 +39,11 @@ const ProductCard: React.FC<ProductProps> = ({
         </div>
       </div>
       <div className="space-y-1 pt-5 group-hover:px-2 transition-all delay-150 ease-in-out duration-300 group-hover:border-b group-hover:border-x group-hover:border-gray-200">
-        <span className="block text-sm text-gray-400">{category}</span>
-        <p className="text-2xl font-medium">{title}</p>
-        <span className="block text-xl text-activeColor font-medium pt-1">
+        <span className="block md:text-sm text-xs text-gray-400">
+          {category}
+        </span>
+        <p className="md:text-2xl text-xl font-medium">{title}</p>
+        <span className="block md:text-xl text-base text-activeColor font-medium md:pt-1 pt-px">
           ${price}
         </span>
       </div>

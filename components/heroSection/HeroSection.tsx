@@ -8,6 +8,7 @@ import Image from "next/image";
 import { AnimatePresence, easeInOut, motion } from "framer-motion";
 import { SlideRight } from "@/utili/animation";
 import { FaArrowLeftLong, FaArrowRightLong } from "react-icons/fa6";
+import AppButton from "../button/AppButton";
 
 const HeroSection = () => {
   const [activeData, setActiveData] = useState(BannerShoeData[0]);
@@ -42,7 +43,7 @@ const HeroSection = () => {
         className="object-center object-cover pointer-events-none w-full h-full z-0"
         alt="cover "
       />
-      <div className="absolute w-full right-0 top-0 pe-5 lg:pe-0 container h-full flex flex-col lg:justify-normal sm:justify-center justify-end pb-[10%] sm:pb-0 sm:items-end items-start lg:pt-[13%] z-10">
+      <div className="absolute w-full right-0 top-0 pe-5 lg:pe-0 container h-full flex flex-col lg:justify-normal sm:justify-center justify-end pb-[6%] sm:pb-0 sm:items-end items-start lg:pt-[13%] z-10">
         <div className="lg:w-[30%] sm:w-[35%] w-[55%] space-y-1">
           <AnimatePresence mode="wait">
             <motion.h5
@@ -68,10 +69,13 @@ const HeroSection = () => {
               {activeData.subTile}
             </motion.h1>
           </AnimatePresence>
+          {/* <div className="block sm:hidden">
+            <AppButton>More Info</AppButton>
+          </div> */}
         </div>
       </div>
 
-      <div className="absolute  lg:left-1/2 sm:left-[7%] left-1/2 lg:top-2/3 sm:top-1/2 top-[15%] lg:-translate-x-1/2 sm:translate-x-0 -translate-x-1/2 lg:-translate-y-2/3 sm:-translate-y-1/2">
+      <div className="absolute w-full sm:w-auto lg:left-1/2 sm:left-[7%] left-1/2 lg:top-2/3 sm:top-1/2 top-[10%] lg:-translate-x-1/2 sm:translate-x-0 -translate-x-1/2 lg:-translate-y-2/3 sm:-translate-y-1/2 ">
         <AnimatePresence mode="wait">
           <motion.div
             key={activeData.id}
@@ -79,6 +83,7 @@ const HeroSection = () => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, ease: easeInOut, delay: 0 }}
             exit={{ opacity: 0, x: 100 }}
+            className=" flex justify-center"
           >
             <motion.div
               key={activeData.id}
@@ -94,7 +99,7 @@ const HeroSection = () => {
               <Image
                 src={activeData.image}
                 alt="shoe"
-                className="xl:w-[90%] lg:w-[90%] md:w-[55%] sm:w-[50%] w-full lg:mx-auto ms-5 sm:mx-0 mx-auto "
+                className=" lg:w-[90%] md:w-[55%] sm:w-[50%] w-[280px] lg:mx-auto md:ms-5 ms-0 lg:ms-0 sm:mx-0 mx-auto "
                 // sizes="(max-width: 768px) 80%, (max-width: 1200px) 90%, 50%"
               />
             </motion.div>
