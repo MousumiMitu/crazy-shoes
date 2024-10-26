@@ -36,7 +36,7 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="lg:h-screen sm:h-[80vh] min-h-[50vh] border lg:-mt-[90px] relative w-full ">
+    <section className="lg:h-screen sm:h-[80vh] min-h-[50vh] lg:-mt-[90px] relative w-full ">
       <Image
         src={cover}
         fill
